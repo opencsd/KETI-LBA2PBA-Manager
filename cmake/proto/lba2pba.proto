@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.snippet_sample";
+option java_outer_classname = "snippet_sample_Proto";
+option objc_class_prefix = "SSP";
+
+package StorageEngineInstance;
+
+service LBA2PBAManager {
+  rpc RequestPBA (LBARequest) returns (PBAResponse) {}
+}
+
+message Chunk{
+  int64 offset = 1;
+  int32 length = 2;
+}
+
+message LBA{
+  string file_name = 1;
+  repeated Chunk chunks = 2;
+}
+
+message LBARequest{
+  repeated LBA file_lba_list = 1;
+}
+
+message PBA{
+  string csd_id = 1;
+  repeated Chunk chunks = 2;
+}
+
+message PBAList{
+  string file_name = 1;
+  repeated PBA csd_pba_list = 2;
+}
+
+message PBAResponse{
+  repeated PBAList file_csd_list = 1;
+}

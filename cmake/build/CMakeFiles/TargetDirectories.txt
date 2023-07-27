@@ -1,0 +1,4 @@
+/root/workspace/LBA2PBA-Manager/cmake/build/CMakeFiles/rebuild_cache.dir
+/root/workspace/LBA2PBA-Manager/cmake/build/CMakeFiles/lba2pba-manager.dir
+/root/workspace/LBA2PBA-Manager/cmake/build/CMakeFiles/edit_cache.dir
+/root/workspace/LBA2PBA-Manager/cmake/build/CMakeFiles/ss_grpc_proto.dir

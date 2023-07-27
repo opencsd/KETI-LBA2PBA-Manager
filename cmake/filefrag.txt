@@ -1,0 +1,26 @@
+[LBA2PBA Manager] LBA2PBA Manager Server listening on 10.0.4.83:40301
+[LBA2PBA Manager] ==:Receive Snippet from Interface Container:==
+[LBA2PBA Manager] File Name: 000088.sst
+filefrag -e /mnt/newport_1/sst/000088.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 1
+[LBA2PBA Manager] File Name: 000147.sst
+filefrag -e /mnt/newport_2/sst/000147.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 2
+[LBA2PBA Manager] File Name: 000148.sst
+filefrag -e /mnt/newport_3/sst/000148.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 3
+[LBA2PBA Manager] File Name: 000149.sst
+filefrag -e /mnt/newport_4/sst/000149.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 4
+[LBA2PBA Manager] File Name: 000150.sst
+filefrag -e /mnt/newport_5/sst/000150.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 5
+[LBA2PBA Manager] File Name: 000209.sst
+filefrag -e /mnt/newport_6/sst/000209.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 6
+[LBA2PBA Manager] File Name: 000210.sst
+filefrag -e /mnt/newport_7/sst/000210.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 7
+[LBA2PBA Manager] File Name: 000211.sst
+filefrag -e /mnt/newport_8/sst/000211.sst 2> /dev/null
+[LBA2PBA Manager] CSD ID: 8

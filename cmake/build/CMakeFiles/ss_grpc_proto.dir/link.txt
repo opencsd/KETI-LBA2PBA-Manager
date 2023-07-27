@@ -1,0 +1,2 @@
+/usr/bin/ar qc libss_grpc_proto.a CMakeFiles/ss_grpc_proto.dir/lba2pba.grpc.pb.cc.o CMakeFiles/ss_grpc_proto.dir/lba2pba.pb.cc.o
+/usr/bin/ranlib libss_grpc_proto.a
