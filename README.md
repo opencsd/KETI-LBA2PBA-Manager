@@ -1,7 +1,7 @@
 ## Introduction of KETI-OpenCSD KETI-LBA2PBA-Manager
 -------------
 
-KETI-DB-Connector-Instance analyzes queries and generates snippets to pushdown queries to CSD.
+KETI-LBA2PBA-Manager returns the physical block address and length of the file to be scanned, as the Host CPU and CSD's File System differ.
 
 
 
@@ -11,9 +11,7 @@ KETI-DB-Connector-Instance analyzes queries and generates snippets to pushdown q
 
 [2. How To Install](#2.-how-to-build)
 
-[3. Modules](#3.-modules)
-
-[4. Governance](#governance)
+[3. Governance](#governance)
 
 ## 1. Requirement
 -------------
@@ -62,13 +60,6 @@ cd KETI-LBA2PBA-Manager/cmake/build/
 cmake ../..
 make -j
 ```
-
-## 3. Modules
--------------
-### Query Planner
--------------
-- Parses and Analyzes Query
-- 
 
 ## Governance
 -------------
