@@ -23,12 +23,6 @@ KETI-DB-Connector-Instance analyzes queries and generates snippets to pushdown q
 
 >   gRPC
 
->   cpprestSDK
-
->   RapidJSON
-
->   ODBC
-
 
 ## 2. How To Build
 1. Install gcc-11 & g++-11
@@ -57,43 +51,17 @@ make install
 cd ../..
 ```
 
-3. Install cpprestSDK
+3. Clone KETI-LBA2PBA-Manager
 ```bash
-apt-get install libcpprest-dev
+git clone https://github.com/opencsd/KETI-LBA2PBA-Manager.git
+cd KETI-LBA2PBA-Manager/cmake/build/
 ```
 
-4. Install RapidJSON
-```bash
-apt-get install -y rapidjson-dev
-```
-
-5. Install ODBC
-```bash
-wget http://www.unixodbc.org/unixODBC-2.3.7.tar.gz
-tar xvzf unixODBC-2.3.7.tar.gz
-cd unixODBC-2.3.7/
-./configure --prefix=/
-make -j
-make install
-```
-
-6. Clone KETI-DB-Connector-Instance
-```bash
-git clone https://github.com/opencsd/KETI-DB-Connector-Instance.git
-cd KETI-DB-Connector-Instance/cmake/build/
-```
-
-7. Build
+4. Build
 ```bash
 cmake ../..
 make -j
 ```
-
-8. Run DB-Connector-Instance
-```bash
-./db_connector_instance
-```
-
 
 ## 3. Modules
 -------------
