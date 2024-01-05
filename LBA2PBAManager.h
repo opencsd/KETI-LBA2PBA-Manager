@@ -104,6 +104,9 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("002003.sst","newport_7"));
 	csdmap.insert(make_pair("002004.sst","newport_8"));
 
+
+
+
 	/* ==============================================*/
 	/* ================= tpch origin ================*/
 	/* ==============================================*/
@@ -119,7 +122,8 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("000925.sst","newport_8"));
 
 	//--region--
-	csdmap.insert(make_pair("000662.sst","newport_1"));
+	//csdmap.insert(make_pair("000662.sst","newport_1"));
+	csdmap.insert(make_pair("002005.sst","newport_1"));
 
 	//--customer--
 	csdmap.insert(make_pair("000664.sst","newport_1"));
@@ -151,7 +155,8 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("001507.sst","newport_8"));
 
 	//--nation--
-	csdmap.insert(make_pair("000663.sst","newport_2"));
+	//csdmap.insert(make_pair("000663.sst","newport_2"));
+	csdmap.insert(make_pair("002064.sst","newport_2"));
 
 	//--orders--
 	csdmap.insert(make_pair("000290.sst","newport_1"));
@@ -164,14 +169,14 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("000413.sst","newport_8"));
 
 	//--part--
-	csdmap.insert(make_pair("000664.sst","newport_1"));
-	csdmap.insert(make_pair("000723.sst","newport_2"));
-	csdmap.insert(make_pair("000724.sst","newport_3"));
-	csdmap.insert(make_pair("000725.sst","newport_4"));
-	csdmap.insert(make_pair("000726.sst","newport_5"));
-	csdmap.insert(make_pair("000785.sst","newport_6"));
-	csdmap.insert(make_pair("000786.sst","newport_7"));
-	csdmap.insert(make_pair("000787.sst","newport_8"));
+	csdmap.insert(make_pair("003805.sst","newport_1"));
+	csdmap.insert(make_pair("003806.sst","newport_2"));
+	csdmap.insert(make_pair("003807.sst","newport_3"));
+	csdmap.insert(make_pair("003808.sst","newport_4"));
+	csdmap.insert(make_pair("003809.sst","newport_5"));
+	csdmap.insert(make_pair("003810.sst","newport_6"));
+	csdmap.insert(make_pair("003811.sst","newport_7"));
+	csdmap.insert(make_pair("003812.sst","newport_8"));
 
 	//--partsupp--
 	csdmap.insert(make_pair("000538.sst","newport_1"));
@@ -183,19 +188,8 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("000602.sst","newport_7"));
 	csdmap.insert(make_pair("000661.sst","newport_8"));
 
-	/* ==============================================*/
-	/* ============= test_index_scan ===========*/
-	/* ==============================================*/
 
-	//--lineitem--
-	csdmap.insert(make_pair("002343.sst","newport_1")); 
 
-	/* ==============================================*/
-	/* ============= test_no_index_scan ===========*/
-	/* ==============================================*/
-
-	//--lineitem--
-	csdmap.insert(make_pair("002411.sst","newport_1")); 
 
 	/* ==============================================*/
 	/* ============== tpch 1m no index ==============*/
@@ -212,7 +206,8 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("003288.sst","newport_8"));
 
 	//--region--
-	csdmap.insert(make_pair("003027.sst","newport_1"));
+	//csdmap.insert(make_pair("003027.sst","newport_1"));
+	csdmap.insert(make_pair("002005.sst","newport_1"));
 
 	//--customer--
 	csdmap.insert(make_pair("003289.sst","newport_1"));
@@ -235,7 +230,8 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("002596.sst","newport_8"));
 
 	//--nation--
-	csdmap.insert(make_pair("003028.sst","newport_2"));
+	//csdmap.insert(make_pair("003028.sst","newport_2"));
+	csdmap.insert(make_pair("002064.sst","newport_2"));
 
 	//--orders--
 	csdmap.insert(make_pair("002655.sst","newport_1"));
@@ -266,6 +262,8 @@ void InitLBA2PBAManager(){
 	csdmap.insert(make_pair("002966.sst","newport_6"));
 	csdmap.insert(make_pair("002967.sst","newport_7"));
 	csdmap.insert(make_pair("002968.sst","newport_8"));
+
+
 }
 
 // trim left 
