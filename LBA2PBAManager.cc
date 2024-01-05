@@ -32,15 +32,6 @@ PBAResponse RunLBA2PBA(LBARequest request){
 		char cmd[256];
 		string fdName = csdmap[file_name]; //원래는 리스트 -> 지금은 테스트로 csd 하나만
 
-		// std::string fdname = csdmap[filenameObject.GetString()];
-		// cout << csdmap[filenameObject.GetString()] << endl;
-		// std::string fullpath = "hdparm --fibmap /mnt/" + fdname +"/%s 2> /dev/null";
-		// std::string fullpath = "filefrag -v /mnt/" + fdname;
-		// if(fdname == ""){
-		// 	fullpath = "hdparm --fibmap /mnt/catalina1/%s 2> /dev/null";
-		// }
-		// sprintf(cmd,fullpath.c_str(),filenameObject.GetString());
-
 		sprintf(cmd,"filefrag -e /mnt/%s/sst/%s 2> /dev/null",fdName.c_str(),file_name.c_str());
 		cout << cmd << endl;//file frag 실행
 		string csdID = fdName.substr(8,1).c_str();//new_port1 -> 1
@@ -128,32 +119,7 @@ PBAResponse RunLBA2PBA(LBARequest request){
 			}
 		}
 
-		// off64_t current_pba_offset;
-		// int tune = 0;
-		// index = 0;
-		// for(int j=0;j<request.file_lba_list(i).chunks_size();j++){
-		// 	Chunk lba_chunk = request.file_lba_list(i).chunks(j);
-		// 	Chunk pba_chunk;
 
-		// 	req_offset = lba_chunk.offset();
-		// 	req_length = lba_chunk.length();
-
-		// 	current_pba_offset = offset_buffer[index][1] + (req_offset - tune);
-
-		// 	if(current_pba_offset > offset_buffer[index][1] + offset_buffer[index][2]){
-		// 		index++;
-		// 		tune = req_offset;
-		// 		current_pba_offset = offset_buffer[index][1] + (req_offset - tune);
-
-		// 		pba_chunk.set_offset(current_pba_offset);
-		// 		pba_chunk.set_length(req_length);
-		// 		pba.add_chunks()->CopyFrom(pba_chunk);
-		// 	}else{
-		// 		pba_chunk.set_offset(current_pba_offset);
-		// 		pba_chunk.set_length(req_length);
-		// 		pba.add_chunks()->CopyFrom(pba_chunk);
-		// 	} 
-		// }
 
 		pba_list.add_csd_pba_list()->CopyFrom(pba);
 		response.add_file_csd_list()->CopyFrom(pba_list);
